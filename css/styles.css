@@ -2058,3 +2058,134 @@ h4 { font-size: 1.25rem; }
         margin-bottom: 1rem;
     }
 }
+
+/* ===== Contact Page - No Form Layout ===== */
+.contact-center {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info-wrapper.full-width {
+    max-width: 800px;
+    width: 100%;
+}
+
+.contact-info-card.large {
+    background: #fff;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-info-card.large h2 {
+    color: #1a1a2e;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info-card.large > p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-details.centered {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-item.large {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.contact-item.large .contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary), #c9a227);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-item.large .contact-icon i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.contact-item.large h4 {
+    color: #1a1a2e;
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-link-large {
+    color: var(--primary) !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-link-large:hover {
+    text-decoration: underline;
+}
+
+.contact-item.large p {
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.cta-buttons-contact {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+.social-section h4 {
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.social-links.large a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+    .contact-info-card.large {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-details.centered {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .cta-buttons-contact {
+        flex-direction: column;
+    }
+    
+    .btn-large {
+        width: 100%;
+    }
+}
