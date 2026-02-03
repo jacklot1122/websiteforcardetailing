@@ -2189,3 +2189,219 @@ h4 { font-size: 1.25rem; }
         width: 100%;
     }
 }
+
+/* ===== Visual Improvements ===== */
+
+/* Better hero section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(26, 26, 46, 0.7) 100%);
+    z-index: 1;
+}
+
+/* Animated gold gradient on buttons */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, #e5c453 50%, var(--primary) 100%);
+    background-size: 200% 200%;
+    animation: shimmer 3s ease infinite;
+    border: none;
+}
+
+@keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card hover effects */
+.feature-card,
+.service-card,
+.price-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-card:hover {
+    transform: scale(1.03);
+}
+
+.price-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Better section spacing */
+.section {
+    padding: 5rem 0;
+}
+
+/* Gold accent lines */
+.section-header::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), transparent);
+    margin: 1.5rem auto 0;
+}
+
+/* Feature card icon background */
+.feature-icon {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.2) 100%);
+    border: 2px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Better footer gradient */
+.footer {
+    background: linear-gradient(180deg, #0d0d1a 0%, #1a1a2e 100%);
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Better link underlines */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Page header improvements */
+.page-header {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact page improvements */
+.contact-info-card.large {
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.contact-item.large:hover {
+    background: rgba(212, 175, 55, 0.1);
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+/* Mobile service card */
+.mobile-service-card {
+    background: linear-gradient(135deg, var(--primary) 0%, #c9a227 100%);
+    color: #1a1a2e;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.mobile-service-card .mobile-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.mobile-service-card h3 {
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.mobile-service-card p {
+    color: rgba(26, 26, 46, 0.8);
+    margin: 0;
+}
+
+/* Map overlay styling */
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(180deg, rgba(26, 26, 46, 0.95) 0%, transparent 100%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.map-content {
+    text-align: center;
+}
+
+.map-content h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.map-content p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+.map-section {
+    position: relative;
+}
+
+/* Improved navbar transparency */
+.navbar {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar.scrolled {
+    background: rgba(26, 26, 46, 0.98);
+}
+
+/* Gallery images hover */
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Loading animation for images */
+img {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Better CTA section */
+.cta-section {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .map-overlay {
+        position: relative;
+        background: #1a1a2e;
+        padding: 1.5rem;
+    }
+}
