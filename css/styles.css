@@ -2405,3 +2405,57 @@ img {
         padding: 1.5rem;
     }
 }
+
+/* Make Why Choose section dark/black */
+.why-us {
+    background: var(--secondary) !important;
+    color: var(--white) !important;
+}
+
+.why-us .section-tag {
+    color: var(--primary) !important;
+}
+
+.why-us .section-title {
+    color: var(--white) !important;
+}
+
+.why-us .section-subtitle {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.why-us .feature-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.why-us .feature-card h3 {
+    color: var(--white) !important;
+}
+
+.why-us .feature-card p {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Move hero content up - reduce top padding */
+.hero {
+    padding-top: 80px !important;
+    min-height: 90vh !important;
+}
+
+.hero-content {
+    padding-top: 60px !important;
+    margin-top: -40px !important;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 60px !important;
+        min-height: 85vh !important;
+    }
+    
+    .hero-content {
+        padding-top: 40px !important;
+        margin-top: -20px !important;
+    }
+}
