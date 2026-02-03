@@ -21,7 +21,7 @@
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     --gradient-dark: linear-gradient(135deg, var(--secondary) 0%, var(--dark) 100%);
-    --gradient-overlay: linear-gradient(135deg, rgba(26, 26, 46, 0.9) 0%, rgba(15, 15, 26, 0.95) 100%);
+    --gradient-overlay: linear-gradient(135deg, rgba(26, 26, 46, 0.4) 0%, rgba(15, 15, 26, 0.5) 100%);
     
     /* Typography */
     --font-primary: 'Montserrat', sans-serif;
@@ -2206,7 +2206,7 @@ h4 { font-size: 1.25rem; }
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(26, 26, 46, 0.7) 100%);
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.5) 0%, rgba(26, 26, 46, 0.3) 100%);
     z-index: 1;
 }
 
