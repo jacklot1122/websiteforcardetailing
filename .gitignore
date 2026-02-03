@@ -1,0 +1,16 @@
+# Ignore Mac files
+.DS_Store
+
+# Ignore backup files
+*.bak
+*.cache
+
+# Ignore node modules if any
+node_modules/
+
+# Ignore editor files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log

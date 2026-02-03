@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a962"/>
+      <stop offset="50%" style="stop-color:#e0c888"/>
+      <stop offset="100%" style="stop-color:#b8963f"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield/Badge Shape -->
+  <g transform="translate(5, 5)">
+    <!-- Outer shield -->
+    <path d="M25 0 L50 0 L50 35 L25 50 L0 35 L0 0 Z" 
+          fill="url(#goldGradient)" 
+          stroke="#1a1a2e" 
+          stroke-width="2"/>
+    
+    <!-- Inner detail lines -->
+    <path d="M25 5 L45 5 L45 32 L25 45 L5 32 L5 5 Z" 
+          fill="none" 
+          stroke="#1a1a2e" 
+          stroke-width="1" 
+          opacity="0.3"/>
+    
+    <!-- T&W Letters -->
+    <text x="25" y="22" 
+          font-family="Montserrat, sans-serif" 
+          font-size="12" 
+          font-weight="800" 
+          fill="#1a1a2e" 
+          text-anchor="middle">T&amp;W</text>
+    
+    <!-- Auto text -->
+    <text x="25" y="35" 
+          font-family="Montserrat, sans-serif" 
+          font-size="7" 
+          font-weight="600" 
+          fill="#1a1a2e" 
+          text-anchor="middle" 
+          letter-spacing="2">AUTO</text>
+    
+    <!-- Car silhouette -->
+    <path d="M10 28 Q15 26 20 28 L30 28 Q35 26 40 28 L42 30 L38 32 L12 32 L8 30 Z" 
+          fill="#1a1a2e" 
+          opacity="0.2"/>
+  </g>
+  
+  <!-- Sparkle/shine effects -->
+  <g fill="#ffffff" opacity="0.6">
+    <circle cx="12" cy="8" r="1.5"/>
+    <circle cx="48" cy="12" r="1"/>
+  </g>
+</svg>
